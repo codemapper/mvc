@@ -1,5 +1,7 @@
 <?php
 
+namespace Bbc\Controller;
+
 /**
  * Der Controller ist der Ort an dem es für jede Seite, welche der Benutzer
  * anfordern kann eine Methode gibt, welche die dazugehörende Businesslogik
@@ -36,7 +38,7 @@ class DefaultController
         // In diesem Fall möchten wir dem Benutzer die View mit dem Namen
         //   "default_index" rendern. Wie das genau funktioniert, ist in der
         //   View Klasse beschrieben.
-        $view = new View('default_index');
+        $view = new \Bbc\Lib\View('default_index');
         $view->title = 'Startseite';
         $view->heading = 'Startseite';
         $view->display();

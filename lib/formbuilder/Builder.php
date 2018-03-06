@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib\FormBuilder;
+
 class Builder
 {
     private $config;

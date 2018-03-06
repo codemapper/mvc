@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Bbc\\Lib\\": "lib/",
+      "Bbc\\Controller\\": "controller/",
+      "Bbc\\Repository\\": "repository/"
+    }
+  },
+
+  "require": {
+    "monolog/monolog": "1.0.*"
+  }
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib\FormBuilder;
+
 class SubmitBuilder extends Builder
 {
     public function __construct()

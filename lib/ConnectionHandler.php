@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib;
+
 /**
  * Der ConnectionHandler ist dafür zuständig, allen Repositories ein und die
  * selbe Verbindung auf die Datenbank zur Verfügung zu stellen.

@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib;
+
 require_once 'ConnectionHandler.php';
 
 /**

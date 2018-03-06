@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib\FormBuilder;
+
 class TextBuilder extends Builder
 {
     public function __construct()

@@ -1,5 +1,7 @@
 <?php
 
+namespace Bbc\Controller;
+
 require_once '../repository/UserRepository.php';
 
 /**
@@ -9,9 +11,9 @@ class UserController
 {
     public function index()
     {
-        $userRepository = new UserRepository();
+        $userRepository = new \Bbc\Repository\UserRepository();
 
-        $view = new View('user_index');
+        $view = new \Bbc\Lib\View('user_index');
         $view->title = 'Benutzer';
         $view->heading = 'Benutzer';
         $view->users = $userRepository->readAll();
@@ -35,7 +37,7 @@ class UserController
             // $password  = $_POST['password'];
             $password = 'no_password';
 
-            $userRepository = new UserRepository();
+            $userRepository = new \Bbc\Repository\UserRepository();
             $userRepository->create($firstName, $lastName, $email, $password);
         }
 
@@ -45,7 +47,7 @@ class UserController
 
     public function delete()
     {
-        $userRepository = new UserRepository();
+        $userRepository = new \Bbc\Repository\UserRepository();
         $userRepository->deleteById($_GET['id']);
 
         // Anfrage an die URI /user weiterleiten (HTTP 302)

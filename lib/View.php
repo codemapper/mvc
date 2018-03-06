@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib;
+
 /**
  * Die View is das V aus MVC. Dabei geht es um alles, was dem Client (Browser)
  * als Antwort auf einen Request zurückgegeben wird. Im Normalfall ist das der

@@ -1,5 +1,7 @@
 <?php
 
+namespace  Bbc\Lib\FormBuilder;
+
 class Form
 {
     public function __construct($action = '#', $method = 'POST')

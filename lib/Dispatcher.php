@@ -20,8 +20,12 @@
  *   Sollte ein Teil in der URI nicht vorhanden sein, wird als Controllername
  *     "DefaultController" bzw. "index" als Funktionsname verwendet.
  */
+
+namespace  Bbc\Lib;
+
 class Dispatcher
 {
+
     /**
      * Diese Methode wertet die Request URI aus leitet die Anfrage entsprechend
      * weiter.
@@ -54,11 +58,13 @@ class Dispatcher
 
         // Den gewünschten Controller laden
         //   Achtung! Hier stützt PHP ab, sollte der Controller nicht existieren
-        require_once "../controller/$controllerName.php";
+        //require_once "../controller/$controllerName.php";
 
         // Eine neue Instanz des Controllers wird erstellt und die gewünschte
         //   Methode darauf aufgerufen.
-        $controller = new $controllerName();
+        //$controller = new $controllerName();
+        $class = 'Bbc\Controller\\'.$controllerName;
+        $controller = new $class();
         $controller->$method();
     }
 }
