@@ -12,11 +12,16 @@ RewriteEngine On
 # ein bestehendes Verzeichnis zeigt. Dies ist wichtig, da ansonsten Dateien,
 # welche nicht über das MVC zur Verfügung gestellt werden (CSS, JavaScript,
 # Bilder) nicht mehr abgerufen werden können.
-RewriteCond %{REQUEST_FILENAME} !-f     #Is regular file.
-RewriteCond %{REQUEST_FILENAME} !-d     #Is directory.
+
+#Is regular file.
+RewriteCond %{REQUEST_FILENAME} !-f
+#Is directory.
+RewriteCond %{REQUEST_FILENAME} !-d
 
 # Leite alle anderen Anfragen auf die Datei index.php um.
-RewriteRule ^.*$ index.php [PT,L]       #PT = pass trough (als URI behandeln)  L = last (letzer Rewrite)
+#PT = pass trough (als URI behandeln)  L = last (letzer Rewrite)
+RewriteRule ^.*$ index.php [PT,L]
+
 
 #Fore more information see:
 #http://httpd.apache.org/docs/current/mod/mod_rewrite.html
