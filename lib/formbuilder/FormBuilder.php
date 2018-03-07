@@ -1,6 +1,5 @@
 <?php
-
-namespace  Bbc\Lib\FormBuilder;
+namespace Bbc\MVC\Lib\FormBuilder;
 
 require_once 'Form.php';
 require_once 'Builder.php';

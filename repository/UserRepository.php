@@ -1,14 +1,14 @@
 <?php
 
-namespace Bbc\Repository;
-
+namespace Bbc\MVC\Repository;
+use Bbc\MVC\Lib as Lib;
 
 /**
  * Das UserRepository ist zuständig für alle Zugriffe auf die Tabelle "user".
  *
  * Die Ausführliche Dokumentation zu Repositories findest du in der Repository Klasse.
  */
-class UserRepository extends \Bbc\Lib\Repository
+class UserRepository extends Lib\Repository
 {
     /**
      * Diese Variable wird von der Klasse Repository verwendet, um generische
@@ -35,7 +35,7 @@ class UserRepository extends \Bbc\Lib\Repository
 
         $query = "INSERT INTO $this->tableName (firstName, lastName, email, password) VALUES (?, ?, ?, ?)";
 
-        $statement = ConnectionHandler::getConnection()->prepare($query);
+        $statement = Lib\ConnectionHandler::getConnection()->prepare($query);
         $statement->bind_param('ssss', $firstName, $lastName, $email, $password);
 
         if (!$statement->execute()) {

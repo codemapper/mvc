@@ -1,6 +1,5 @@
 <?php
-
-namespace  Bbc\Lib;
+namespace  Bbc\MVC\Lib;
 
 /**
  * Die View is das V aus MVC. Dabei geht es um alles, was dem Client (Browser)

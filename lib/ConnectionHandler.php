@@ -1,7 +1,5 @@
 <?php
-
-namespace  Bbc\Lib;
-
+namespace Bbc\MVC\Lib;
 /**
  * Der ConnectionHandler ist dafür zuständig, allen Repositories ein und die
  * selbe Verbindung auf die Datenbank zur Verfügung zu stellen.
@@ -57,7 +55,7 @@ class ConnectionHandler
             $database = $config['database']['database'];
 
             // Verbindung initialisieren
-            self::$connection = new MySQLi($host, $username, $password, $database);
+            self::$connection = new \MySQLi($host, $username, $password, $database);
             if (self::$connection->connect_error) {
                 $error = self::$connection->connect_error;
                 throw new Exception("Verbindungsfehler: $error");

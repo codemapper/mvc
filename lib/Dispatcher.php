@@ -1,4 +1,6 @@
 <?php
+namespace Bbc\MVC\Lib;
+use Bbc\MVC\Controller as Controller;
 
 /**
  * Der Dispatcher ist dafür zuständig, alle Requests an den entsprechenden
@@ -20,8 +22,6 @@
  *   Sollte ein Teil in der URI nicht vorhanden sein, wird als Controllername
  *     "DefaultController" bzw. "index" als Funktionsname verwendet.
  */
-
-namespace  Bbc\Lib;
 
 class Dispatcher
 {
@@ -56,15 +56,10 @@ class Dispatcher
 
         $args = array_slice($uriFragments, 2);
 
-        // Den gewünschten Controller laden
-        //   Achtung! Hier stützt PHP ab, sollte der Controller nicht existieren
-        //require_once "../controller/$controllerName.php";
-
         // Eine neue Instanz des Controllers wird erstellt und die gewünschte
         //   Methode darauf aufgerufen.
-        //$controller = new $controllerName();
-        $class = 'Bbc\Controller\\'.$controllerName;
-        $controller = new $class();
+        $controllerClass = 'Bbc\MVC\Controller\\'.$controllerName;
+        $controller = new $controllerClass();
         $controller->$method();
     }
 }

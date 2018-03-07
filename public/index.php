@@ -9,8 +9,9 @@
  * auf eine bestehende Datei zeigen hierhin umgeleitet.
  */
 
+use Bbc\MVC\Lib as Lib;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$dispatcher = new Bbc\Lib\Dispatcher();
+$dispatcher = new \Bbc\MVC\Lib\Dispatcher();
 $dispatcher->dispatch();

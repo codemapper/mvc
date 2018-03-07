@@ -1,6 +1,6 @@
 <?php
+namespace Bbc\MVC\Lib\FormBuilder;
 
-namespace  Bbc\Lib\FormBuilder;
 
 class Form
 {
@@ -19,7 +19,7 @@ class Form
     public function __call($name, $args)
     {
         $builderName = ucfirst($name).'Builder';
-
-        return new $builderName();
+        $builderClass = 'Bbc\MVC\Lib\Formbuilder\\'.$builderName;
+        return new $builderClass();
     }
 }

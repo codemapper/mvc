@@ -1,9 +1,9 @@
 {
   "autoload": {
     "psr-4": {
-      "Bbc\\Lib\\": "lib/",
-      "Bbc\\Controller\\": "controller/",
-      "Bbc\\Repository\\": "repository/"
+      "Bbc\\MVC\\Lib\\": "lib/",
+      "Bbc\\MVC\\Controller\\": "controller/",
+      "Bbc\\MVC\\Repository\\": "repository/"
     }
   },
 

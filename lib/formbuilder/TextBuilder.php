@@ -1,6 +1,6 @@
 <?php
+namespace Bbc\MVC\Lib\FormBuilder;
 
-namespace  Bbc\Lib\FormBuilder;
 
 class TextBuilder extends Builder
 {
