@@ -1,8 +1,4 @@
 {
-
-
-  // Composer psr-4 autoload für Bbc MVC
-  // Beispiel: Lädt alle Klassen unter dem Pfad controller und stellt sie als unter dem Namespace Bbc/MVC/Controller zur Verfügung
   "autoload": {
     "psr-4": {
       "Bbc\\MVC\\Lib\\": "lib/",
@@ -11,7 +7,6 @@
     }
   },
 
-  //Verwendete Pakete
   "require": {
     "monolog/monolog": "1.0.*"
   }
