@@ -69,7 +69,7 @@ Composer ist ein Packetmanager für PHP. Damit lassen sich Klassen automatisch l
 Bevor das Bbc MVC verwendet werden kann muss das Projekt mit Composer initialisiert werden.
 Installiere dazu Composer mit Composer-Setup.exe oder als composer.phar:
 
- ```https://getcomposer.org/download/```
+ https://getcomposer.org/download/
  
 Anschliessend installiere den Autoloader und Packete des Bbc MVC.
 Führe dazu auf der Kommandozeile im Hauptordner des Projekts folgenden Befehl aus:
