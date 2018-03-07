@@ -9,9 +9,13 @@
  * auf eine bestehende Datei zeigen hierhin umgeleitet.
  */
 
-use Bbc\MVC\Lib as Lib;
-
+/*
+ * Laden der Autoload Funktionen von Composer
+ */
 require __DIR__ . '/../vendor/autoload.php';
 
+/*
+ * Instanzieren des Dispatchers und Aufruf der Dispatcher-Funktion
+ */
 $dispatcher = new \Bbc\MVC\Lib\Dispatcher();
 $dispatcher->dispatch();
