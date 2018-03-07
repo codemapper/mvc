@@ -65,13 +65,13 @@ NameVirtualHost *:80
 ```
 
 #### Composer
-Composer ist ein Paketmanager für PHP. Damit lassen sich Klassen automatisch laden und Packete einfach installieren und aktualisieren.
+Composer ist ein Paketmanager für PHP. Damit lassen sich Klassen automatisch laden und Pakete einfach installieren und aktualisieren.
 Bevor das Bbc MVC verwendet werden kann muss das Projekt mit Composer initialisiert werden.
 Installiere dazu Composer mit Composer-Setup.exe oder als composer.phar:
 
  https://getcomposer.org/download/
  
-Anschliessend installiere den Autoloader und Packete des Bbc MVC.
+Anschliessend installiere den Autoloader und Pakete des Bbc MVC.
 Führe dazu auf der Kommandozeile im Hauptordner des Projekts folgenden Befehl aus:
  
  ```composer install```
